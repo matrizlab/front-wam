@@ -4,7 +4,7 @@ test front WAM
 
 Notas:
 
-- en toda la App usè los iconos de Fontawesome, pediria al disenador una ayuda con los iconos SVG
+- en toda la App usè los iconos de Fontawesome, pediria al disenador una ayuda para el reemplazo con iconos SVG
 
 ## Stacks
 

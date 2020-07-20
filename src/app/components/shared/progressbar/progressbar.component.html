@@ -1,0 +1,50 @@
+<div class="board-inner" id="status-buttons">
+  <ul
+    class="nav nav-tabs"
+    id="myTab"
+    [class.active-step1]="step1.isActive"
+    [class.active-step2]="step2.isActive"
+    [class.active-step3]="step3.isActive"
+  >
+    <div class="line"></div>
+
+    <!-- step 1 - login -->
+    <li>
+      <a
+        routerLink="/login"
+        routerLinkActive="active"
+        #step1="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+        data-toggle="tab"
+        title="login"
+      >
+        <span class="round-tabs one"> </span>
+      </a>
+    </li>
+
+    <!-- step 2 - checkout -->
+    <li>
+      <a
+        routerLink="/checkout"
+        routerLinkActive="active"
+        #step2="routerLinkActive"
+        data-toggle="tab"
+        title="checkout"
+      >
+        <span class="round-tabs two"> </span>
+      </a>
+    </li>
+    <!-- step 3 - not displayed but necessary for the class .active-step3 -->
+    <li style="display: none;">
+      <a
+        routerLink="/result"
+        routerLinkActive="active"
+        #step3="routerLinkActive"
+        data-toggle="tab"
+        title="result"
+      >
+      </a>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</div>

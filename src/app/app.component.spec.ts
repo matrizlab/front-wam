@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'front-wam'`, () => {
+  it(`should have as title 'angular-multi-step'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('front-wam');
+    expect(app.title).toEqual('angular-multi-step');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('front-wam app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-multi-step app is running!');
   });
 });

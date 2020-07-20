@@ -1,0 +1,48 @@
+<form #loginForm="ngForm" class="wamForm" novalidate>
+  <div class="tab-pane fade in active">
+    <h4 class="head text-center">{{ title }}</h4>
+
+    <div class="row login-box">
+      <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
+        <p class="login-subtitle text-center">
+          Revisa los datos y completa aquellos pendientes antes de continuar el
+          proceso.
+        </p>
+        <div class="form-group input-group-lg">
+          <label class="control-label" for="firstname">Nombre</label>
+          <input
+            class="form-control input-md"
+            #firstname="ngModel"
+            required
+            id="firstname"
+            name="firstname"
+            type="text"
+            [(ngModel)]="user.firstName"
+          />
+        </div>
+        <div class="form-group input-group-lg">
+          <label class="control-label" for="lastname">Apellidos</label>
+          <input
+            class="form-control input-md"
+            #lastname="ngModel"
+            required
+            id="lastname"
+            name="lastname"
+            type="text"
+            [(ngModel)]="user.lastName"
+          />
+        </div>
+        <div class="form-group text-center">
+          <button
+            type="button"
+            class="btn action-button"
+            [disabled]="!loginForm.valid"
+            (click)="goToNext(loginForm)"
+          >
+            Continuar&nbsp;&nbsp;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

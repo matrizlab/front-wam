@@ -1,0 +1,43 @@
+<form #checkoutForm="ngForm" class="wamForm" novalidate>
+  <div class="form-horizontal">
+    <div class="tab-pane fade in active">
+      <h4 class="head text-center">{{ title }}</h4>
+      <p class="login-subtitle text-center">
+        Revisa los datos y completa aquellos pendientes antes de continuar el
+        proceso.
+      </p>
+      <div class="row checkout-box">
+        <div class="row justify-content-center checkout-box-body">
+          <div class="col-9">
+            <h4>Tarjeta de credito</h4>
+            <p class="checkout-subtitle text-center">
+              Se redigirà a una plataforma de pago. Se trata de un proceso
+              seguro. Puede que la validaciòn del pago tarde 24 horas en
+              completarse.
+            </p>
+            <!-- TODO modificar estos iconos con SVG -->
+            <i class="fa fa-cc-visa" aria-hidden="true"></i> &nbsp;
+            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="form-group text-center space-20">
+          <button
+            type="button"
+            class="btn action-button-previous"
+            (click)="goToPrevious(checkoutForm)"
+          >
+            &nbsp;&nbsp;Anterior
+          </button>
+          <button
+            type="button"
+            class="btn action-button"
+            [disabled]="!checkoutForm.valid"
+            (click)="goToNext(checkoutForm)"
+          >
+            Pagar&nbsp;&nbsp;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -2,6 +2,10 @@
 
 test front WAM
 
+Notas:
+
+- en toda la App usè los iconos de Fontawesome, pediria al disenador una ayuda con los iconos SVG
+
 ## Stacks
 
 - Angular

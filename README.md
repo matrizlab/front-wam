@@ -4,7 +4,9 @@ test front WAM
 
 Notas:
 
-- en toda la App usè los iconos de Fontawesome, pediria al disenador una ayuda para el reemplazo con iconos SVG
+- en toda la App usè los iconos de Fontawesome, pediria al disenador una ayuda con los iconos SVG
+- elegi utilizar un framework como bootstrap en cuanto permite acelerar el desarollo, ayuda el trabajo en equipo, garantiza la compatibilidad entre navegadores.
+- entre las utilidades que nos ofrece un framework CSS es que están pensados para el desarrollo flexible y responsive
 
 ## Stacks
 
